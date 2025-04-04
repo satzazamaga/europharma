@@ -87,3 +87,15 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* Стиль для контейнера с видео */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
