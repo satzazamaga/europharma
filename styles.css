@@ -1,101 +1,63 @@
-/* Reset some basic styles */
-* {
+body {
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #222;
 }
 
 header {
-    background-color: #004f9c;
-    padding: 20px;
+    background-color: #002244;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    padding: 20px 0;
 }
 
-header .logo img {
-    width: 150px;
+marquee {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1em;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
+.video-section, .table-section {
     padding: 40px;
+    max-width: 960px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-h1, h2 {
-    margin-bottom: 20px;
-}
-
-#home {
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-#services ul {
-    list-style: none;
-    margin: 20px 0;
-}
-
-#services ul li {
-    margin-bottom: 10px;
-}
-
-#products {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.product {
-    text-align: center;
-    margin: 20px;
-}
-
-.product img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Стиль для контейнера с видео */
 .video-container {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 20px;
 }
 
-.video-container iframe {
-    max-width: 100%;
-    height: auto;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #bbb;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+}
+
+footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
