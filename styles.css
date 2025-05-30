@@ -1,4 +1,4 @@
-/* Фон с анимацией */
+/* Технологичный фон */
 body {
     font-family: 'Orbitron', sans-serif;
     margin: 0;
@@ -30,6 +30,7 @@ marquee {
     background: linear-gradient(to right, #00c6ff, #0072ff);
     padding: 10px;
     font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
 }
 
 main {
@@ -57,33 +58,46 @@ h2 {
     box-shadow: 0 0 15px rgba(0,255,255,0.4);
 }
 
-table {
+/* Таблица */
+.table-section {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0,0,50,0.5);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.info-table table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 50, 0.4);
-    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    background: linear-gradient(145deg, #001d3d, #003566);
 }
 
-table, th, td {
-    border: 1px solid #00c6ff;
+.info-table th {
+    padding: 20px;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    color: white;
+    font-size: 1.2em;
+    border-bottom: 2px solid #00ffff;
 }
 
-th, td {
-    padding: 15px;
-    text-align: center;
-    color: #fff;
+.info-table td {
+    padding: 18px;
+    color: #ffffff;
+    font-size: 1.05em;
+    border-bottom: 1px solid #00c6ff;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-th {
-    background-color: #0072ff;
-}
-
-tr:hover {
+.info-table tr:hover td {
     background-color: rgba(0, 255, 255, 0.1);
-    transition: 0.3s;
+    transform: scale(1.01);
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 footer {
@@ -92,5 +106,5 @@ footer {
     background-color: rgba(0, 0, 50, 0.85);
     color: #00e5ff;
     border-top: 2px solid #00e5ff;
-    margin-top: 50px;
+    margin-top: 40px;
 }
