@@ -1,12 +1,8 @@
-// Пример простого скрипта для анимации или взаимодействия
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('header nav ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            link.style.color = '#ffcc00';
-        });
-        link.addEventListener('mouseleave', () => {
-            link.style.color = '';
-        });
-    });
-});
+public class UlbaInfo {
+    public static void main(String[] args) {
+        System.out.println("Ульбинский Металлургический Завод");
+        System.out.println("Год основания: 1949");
+        System.out.println("Расположение: Усть-Каменогорск, Казахстан");
+        System.out.println("Продукция: Уран, Тантал, Бериллий, Ниобий");
+    }
+}
