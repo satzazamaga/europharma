@@ -74,37 +74,6 @@ h2 {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
-    background: linear-gradient(145deg, #001d3d, #003566);
-}
-
-.info-table th {
-    padding: 20px;
-    background: linear-gradient(to right, #0072ff, #00c6ff);
-    color: white;
-    font-size: 1.2em;
-    border-bottom: 2px solid #00ffff;
-}
-
-.info-table td {
-    padding: 18px;
-    color: #ffffff;
-    font-size: 1.05em;
-    border-bottom: 1px solid #00c6ff;
-    background-color: rgba(255, 255, 255, 0.05);
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.info-table tr:hover td {
-    background-color: rgba(0, 255, 255, 0.1);
-    transform: scale(1.01);
-    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.3);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 50, 0.85);
-    color: #00e5ff;
-    border-top: 2px solid #00e5ff;
-    margin-top: 40px;
-}
+    background:
+::contentReference[oaicite:0]{index=0}
+ 
